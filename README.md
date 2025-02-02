@@ -25,7 +25,7 @@ npm install
     npm run dev
     ```
 
-2. **Access the Application**: Open your web browser and navigate to `http://localhost:3000` to view the application.
+2. **Access the Application**: Open your web browser and navigate to `https://chatbot-delta-lac.vercel.app` to view the application.
 
 ## Key Components
 
