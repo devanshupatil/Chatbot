@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Code, Mail, Bot, AlertCircle, PartyPopper, Settings, MessageSquare, Share2 } from 'lucide-react';
 import { useParams } from 'react-router-dom';
 
@@ -30,6 +30,13 @@ export function ChatbotIntegration() {
   const item = JSON.parse(localStorage.getItem('data') || '[]')[index];
 
   console.log(item)
+
+  useEffect(() => {
+   const token = localStorage.getItem('sb-bnkirpzbgaxuikwgrmse-auth-token');
+   if (!token) {
+    window.location.href = '/login';
+   }
+  }, []);
 
 
   const successMessage = (

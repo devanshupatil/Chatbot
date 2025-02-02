@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Globe } from 'lucide-react';
 import { useParams } from 'react-router-dom';
 
@@ -9,6 +9,12 @@ export function Details() {
   const { index } = useParams();
   console.log(index)
   
+  useEffect(() => {
+    const token = localStorage.getItem('sb-bnkirpzbgaxuikwgrmse-auth-token');
+    if (!token) {
+     window.location.href = '/login';
+    }
+   }, []);
 
   // console.log(id)
 

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Plus, Trash2,ChartNoAxesCombined } from 'lucide-react';
 import AddItemModal from '../Modal/AddItemModal';
 import Status from '../component/Status';
@@ -25,6 +25,13 @@ function OrganizationSetup() {
     toast.success('Item deleted successfully')
 
   };
+
+  useEffect(() => {
+    const token = localStorage.getItem('sb-bnkirpzbgaxuikwgrmse-auth-token');
+    if (!token) {
+     window.location.href = '/login';
+    }
+   }, []);
 
 
 
