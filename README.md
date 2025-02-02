@@ -67,40 +67,15 @@ npm run dev
 
 - **Frontend**: React.js, Next.js
 - **Backend**: Node.js, Express
-- **Database**: MongoDB
+- **Database**: Supabase
 - **Authentication**: JWT, Google OAuth
 - **Queue Management**: Redis
 - **Web Scraping**: Cheerio/Puppeteer
 - **Real-time Updates**: Socket.io
 - **UI Components**: Tailwind CSS, Shadcn/UI
 
-## 🏗️ Project Structure
 
-```
-├── client/                 # Frontend React application
-│   ├── components/         # Reusable UI components
-│   ├── pages/             # Next.js pages
-│   └── styles/            # Global styles
-├── server/                 # Backend Node.js application
-│   ├── controllers/       # Route controllers
-│   ├── models/           # Database models
-│   ├── services/         # Business logic
-│   └── utils/            # Helper functions
-└── scripts/               # Utility scripts
-```
 
-## 🔑 Configuration
-
-Key configuration options in `.env`:
-
-```env
-NODE_ENV=development
-PORT=3000
-MONGODB_URI=mongodb://localhost:27017/chatbot-platform
-GOOGLE_CLIENT_ID=your_google_client_id
-GOOGLE_CLIENT_SECRET=your_google_client_secret
-JWT_SECRET=your_jwt_secret
-```
 
 ## 🛠️ Development
 
