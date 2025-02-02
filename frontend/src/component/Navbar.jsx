@@ -2,6 +2,7 @@
 import { supabase } from '../config/supabase';
 import { useState, useEffect } from 'react';
 import { toast } from 'react-hot-toast';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -47,9 +48,11 @@ const Navbar = () => {
     <div className="fixed top-0 left-0 right-0 z-50 bg-gray-900 text-white px-4 py-2 flex justify-between md:flex-row flex-col md:space-x-4 space-x-0">
       <div className="flex items-center justify-center w-full md:w-auto md:order-first order-last">
 
+        <Link to={'/'}>
         <ul className="flex items-center justify-center space-x-4 md:flex-row flex-col font-bold font-serif text-2xl">
           BeyondChats
         </ul>
+        </Link>
 
 
       </div>
