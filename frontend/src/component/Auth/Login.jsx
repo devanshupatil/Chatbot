@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
-import { supabase } from '../config/supabase';
+import { supabase } from '../../config/supabase';
 import { useEffect } from 'react';
 import { Lock, Eye, EyeOff} from 'lucide-react';
-// import Navbar from './Navbar';
 
 const Login = () => {
   const [email, setEmail] = useState('');

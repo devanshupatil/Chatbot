@@ -25,17 +25,16 @@ export function ChatbotIntegration() {
     setRandomBool(Math.random() >= 0.5);
   };
 
-  const { index } = useParams();
+  // const { index } = useParams();
 
-  const item = JSON.parse(localStorage.getItem('data') || '[]')[index];
+  // const item = JSON.parse(localStorage.getItem('data') || '[]')[index];
 
-  console.log(item)
 
   useEffect(() => {
-   const token = localStorage.getItem('sb-bnkirpzbgaxuikwgrmse-auth-token');
-   if (!token) {
-    window.location.href = '/login';
-   }
+    const token = localStorage.getItem('sb-bnkirpzbgaxuikwgrmse-auth-token');
+    if (!token) {
+      window.location.href = '/login';
+    }
   }, []);
 
 
@@ -264,6 +263,7 @@ export function ChatbotIntegration() {
                     >
                       Send Instructions
                     </button>
+
                   </div>
                 </div>
 

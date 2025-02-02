@@ -7,7 +7,6 @@ export function Details() {
   const [selectedPage, setSelectedPage] = useState(null);
 
   const { index } = useParams();
-  console.log(index)
   
   useEffect(() => {
     const token = localStorage.getItem('sb-bnkirpzbgaxuikwgrmse-auth-token');
@@ -16,9 +15,7 @@ export function Details() {
     }
    }, []);
 
-  // console.log(id)
 
-  // Dummy data for detected pages
   const webPages = [
     {
       url: '/about',
@@ -49,7 +46,7 @@ export function Details() {
   ];
 
   const item = JSON.parse(localStorage.getItem('data') || '[]')[index];
-  console.log(item)
+
 
   return (
     <div className="mx-auto max-w-4xl pt-20 ">

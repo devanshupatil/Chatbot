@@ -1,15 +1,15 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Login from './Auth/Login'
-import Signup from './Auth/Signup'
-import ForgotPass from './Auth/ForgotPass'
-import ResetPassword from './Auth/ResetPassword'
-import OrganisationStep from './Pages/OrganisationStep'
+import Login from './component/Auth/Login'
+import Signup from './component/Auth/Signup'
+import ForgotPass from './component/Auth/ForgotPass'
+import ResetPassword from './component/Auth/ResetPassword'
+import OrganisationStep from './component/Pages/OrganisationStep'
 import { Toaster } from 'react-hot-toast'
 import Navbar from './component/Navbar'
-import { ChatbotIntegration } from './Pages/ChatbotIntegration'
+import { ChatbotIntegration } from './component/Pages/ChatbotIntegration'
 import Details from './component/Details'
-// import { useParams } from 'react-router-dom'
+
 
 function App() {
 

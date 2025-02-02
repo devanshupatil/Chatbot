@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import { toast } from 'react-hot-toast';
-import { supabase } from '../config/supabase';
+import { supabase } from '../../config/supabase';
 
 const ForgotPass = () => {
+
   const [email, setEmail] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
 
-  
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,6 +28,7 @@ const ForgotPass = () => {
         toast.error(error.message);
       } else {
         toast.success('Password reset email sent successfully');
+        window.location.href = '/login';
       }
     } catch (err) {
       console.error(err);
@@ -84,10 +86,10 @@ const ForgotPass = () => {
         <div className="mt-6 text-center">
           <a href="/"
             className="text-sm text-blue-600 hover:underline"
-            onClick={() => {}}
+            onClick={() => { }}
           >
             Back to Sign In
-            </a>
+          </a>
 
         </div>
       </div>
