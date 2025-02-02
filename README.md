@@ -1,134 +1,42 @@
-# AI Chatbot Integration Platform
+Chatbot Frontend
+Overview
+The Chatbot Frontend is a React-based application that allows users to manage organizations and integrate a chatbot into their workflows. It provides a user-friendly interface for authentication, organization management, and chatbot integration.
 
-A seamless platform for businesses to create, train, and integrate AI-powered chatbots into their websites using web scraping technology.
+Features
+User Authentication: Users can sign up, log in, reset their passwords, and manage their profiles.
+Organization Management: Users can add, update, and delete organizations.
+Chatbot Integration: Provides a simple method for integrating a chatbot into user applications.
+Responsive Design: Built with Tailwind CSS for a modern and responsive UI.
+Installation
+To get started with this application, clone the repository and install the necessary dependencies:
 
-## 🌟 Features
-
-### User Registration & Authentication
-- Email and password-based registration
-- Google OAuth integration
-- Email verification system for enhanced security
-
-### Organization Setup
-- Company profile creation
-- Automated website meta-description fetching
-- Real-time website scraping status monitoring
-- Detailed view of scraped data chunks per webpage
-
-### Chatbot Training & Integration
-- Automated training using scraped website data
-- Real-time training status monitoring
-- Interactive testing environment
-- Multiple integration options:
-  - Direct code snippet integration
-  - Developer email instructions
-- Integration verification system
-
-### Testing & Validation
-- Live chatbot preview
-- Feedback collection system
-- Integration status monitoring
-- Success celebration UI with confetti
-- Social media sharing capabilities
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js (v14 or higher)
-- MongoDB
-- Redis (for queue management)
-- Google OAuth credentials
-
-### Installation
-
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/chatbot-integration-platform.git
-cd chatbot-integration-platform
-```
-
-2. Install dependencies
-```bash
+bash
+CopyInsert
+git clone <repository-url>
+cd <repository-directory>
 npm install
-```
-
-3. Configure environment variables
-```bash
-cp .env.example .env
-# Edit .env with your configuration
-```
-
-4. Start the development server
-```bash
+Usage
+Start the Application: Run the following command to start the application:
+bash
+CopyInsert in Terminal
 npm run dev
-```
-
-## 💻 Tech Stack
-
-- **Frontend**: React.js, Next.js
-- **Backend**: Node.js, Express
-- **Database**: Supabase
-- **Authentication**: JWT, Google OAuth
-- **Queue Management**: Redis
-- **Web Scraping**: Cheerio/Puppeteer
-- **Real-time Updates**: Socket.io
-- **UI Components**: Tailwind CSS, Shadcn/UI
-
-
-
-
-## 🛠️ Development
-
-### Running Tests
-```bash
-npm run test
-```
-
-### Linting
-```bash
-npm run lint
-```
-
-### Building for Production
-```bash
-npm run build
-```
-
-## 📝 API Documentation
-
-API documentation is available at `/api/docs` when running the development server.
-
-Key endpoints:
-- `/api/auth/*` - Authentication endpoints
-- `/api/organization/*` - Organization management
-- `/api/scraper/*` - Web scraping endpoints
-- `/api/chatbot/*` - Chatbot management
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## 👥 Maintainers
-
-- Your Name - [@yourgithub](https://github.com/yourgithub)
-
-## 🙏 Acknowledgments
-
-- Thanks to all contributors
-- Inspired by modern chatbot integration solutions
-- Built with open-source software
-
-## 📞 Support
-
-For support, email support@yourplatform.com or join our Slack community.
-
----
-Made with ❤️ by [Your Name/Company]
+Access the Application: Open your web browser and navigate to http://localhost:3000 to view the application.
+Key Components
+App Component
+Routing: Manages navigation between different pages using react-router-dom.
+Toast Notifications: Implements notifications using react-hot-toast.
+Authentication Components
+Signup: Handles user registration and input validation.
+Reset Password: Allows users to reset their passwords with validation.
+Organization Management
+OrganizationSetup: Manages the list of organizations, allowing users to add, update, and delete entries.
+Details: Displays detailed information about selected organizations.
+Chatbot Integration
+ChatbotIntegration: Provides instructions and code snippets for integrating a chatbot into user applications.
+Navbar
+Navigation: Displays links for navigation and manages user authentication state.
+Configuration
+Dependencies: The project uses several libraries including React, Supabase, and Tailwind CSS.
+Environment Variables: Ensure to set up your .env file with the necessary configurations for Supabase.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
