@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Code, Mail, ExternalLink, AlertCircle, PartyPopper, Settings, MessageSquare, Share2 } from 'lucide-react';
+import { Code, Mail, Bot, AlertCircle, PartyPopper, Settings, MessageSquare, Share2 } from 'lucide-react';
 import { useParams } from 'react-router-dom';
 
 
@@ -117,7 +117,7 @@ export function ChatbotIntegration() {
                 onClick={() => setShowPreview(true)}
                 className="cursor-pointer flex flex-col items-center rounded-lg border-2 border-dashed border-gray-300 p-6 text-center hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
-                <ExternalLink className="h-8 w-8 text-gray-400" />
+                <Bot className="h-8 w-8 text-gray-400" />
                 <h3 className="mt-2 font-medium text-gray-900">Test Chatbot</h3>
                 <p className="mt-1 text-sm text-gray-500">
                   Preview how your chatbot will look on your website
